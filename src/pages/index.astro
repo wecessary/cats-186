@@ -1,4 +1,7 @@
 ---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Hero from "../components/Hero.astro";
+import HouseRules from "../components/HouseRules.astro";
 ---
 
 <html lang="en">
@@ -10,6 +13,18 @@
     <title>Astro</title>
   </head>
   <body>
-    <h1>Astro</h1>
+    <BaseLayout>
+      <p class="text-center text-xl lg:text-2xl">
+        Dear <span class="line-through">inivitee</span><span
+          class="text-red-400 bg-yellow-100"
+        >
+          Rachel,</span
+        >
+      </p>
+
+      <Hero />
+      <HouseRules />
+      <p class="text-center">Looking forward to seeing you!</p>
+    </BaseLayout>
   </body>
 </html>
