@@ -1,3 +1,19 @@
+---
+interface Props {
+  date: string;
+  invitee: string;
+}
+const { date, invitee } = Astro.props;
+---
+
+<p class="text-center text-xl lg:text-2xl">
+  Dear <span class="line-through">inivitee</span><span
+    class="text-red-400 bg-yellow-100"
+  >
+    {invitee},</span
+  >
+</p>
+
 <div class="flex justify-center">
   <img
     src="/cat_pics/import_cat_pic.jpg"
@@ -10,7 +26,7 @@
 
 <h1 class="text-center text-2xl px-10 lg:text-4xl">
   <span class="block">Humans are away</span>
-  <span class="block text-yellow-200">3-10 July!</span>
+  <span class="block text-yellow-200">{date}!</span>
   <span class="block">
     <span>Come and hava a</span>
     <span class="text-[#ff6200]">house party!</span>
