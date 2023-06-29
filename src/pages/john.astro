@@ -1,0 +1,26 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Hero from "../components/Hero.astro";
+import HouseRules from "../components/HouseRules.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>186 Cats</title>
+  </head>
+  <body>
+    <BaseLayout>
+      <Hero
+        link="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NmZkMDBzZ2tjMXJtNm9kaWx1N3JwNzhqdjEgd2VzbGV5bWhqQG0&tmsrc=wesleymhj%40gmail.com"
+        invitee="John"
+        date="20 Aug - 7 Sept"
+      />
+      <HouseRules />
+      <p class="text-center text-3xl">Looking forward to seeing you!</p>
+    </BaseLayout>
+  </body>
+</html>
